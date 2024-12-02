@@ -1,0 +1,106 @@
+.register {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 3px solid #01497a;
+    border-radius: 15px; /* Zaobljeni ivici */
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Suptilna senka */
+    animation: slideUp 0.5s ease-out;
+}
+
+/* Keyframe Animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.singUp-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #01497a;
+    padding-bottom: 10px;
+    letter-spacing: 1px; /* Dodajte razmak između slova */
+    color: #01497a;
+}
+
+.singUp-title:hover {
+    color: #456794; /* Boja pri hoveru */
+    border-color: #456794; /* Promena boje podcrtavanja */
+}
+
+
+.signUp-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signUp-box {
+    position: relative;
+}
+
+.signUp-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #01497a;
+    font-size: 1rem;
+    outline: none;
+    background-color: #fff;
+}
+
+.signUp-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login__icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+.signUp-button {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 30px;
+    background-color: #01497a;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.signUp-button:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, #456794, #a3b3c9);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+
+}
+
+.signUp-switch a{
+    text-decoration: none;
+    color: #01497a;
+}
+  
+.signUp-switch a:hover{
+    color: #839fc4;
+}
